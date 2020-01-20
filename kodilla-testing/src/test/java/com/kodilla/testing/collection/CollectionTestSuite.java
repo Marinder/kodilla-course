@@ -45,11 +45,11 @@ public class CollectionTestSuite {
         normal1.add(5);
         normal1.add(6);
 
+
         ArrayList<Integer> normal2 = new ArrayList<Integer>();
         normal2.add(2);
         normal2.add(4);
         normal2.add(6);
-        normal2.add(8);
         //When
         OddNumbersExterminator exterminate1 = new OddNumbersExterminator();
         //Then
