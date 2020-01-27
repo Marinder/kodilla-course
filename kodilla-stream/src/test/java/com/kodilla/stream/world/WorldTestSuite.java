@@ -19,17 +19,16 @@ public class WorldTestSuite {
         europa.add(poland);
         europa.add(germany);
         Continent europas = new Continent(europa);
+
         List<Country> australian = new ArrayList<>();
         Country australia = new Country(new BigDecimal("123456789"));
         australian.add(australia);
         Continent australians = new Continent(australian);
 
-
         List<Country> asia = new ArrayList<>();
         Country china = new Country(new BigDecimal("123456789"));
         asia.add(china);
         Continent asian = new Continent(asia);
-
 
         List<Continent> listContinent = new ArrayList<>();
         listContinent.add(europas);
