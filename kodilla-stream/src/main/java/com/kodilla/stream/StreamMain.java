@@ -9,6 +9,7 @@ import com.kodilla.stream.beautifier.PoemBeautifier;
 import com.kodilla.stream.lambda.ExpressionExecutor;
 import com.kodilla.stream.person.People;
 import com.kodilla.stream.reference.FunctionalCalculator;
+import jdk.vm.ci.meta.Local;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -22,7 +23,7 @@ public class StreamMain {
         Forum theForum = new Forum();
         Map<Integer, ForumUser> theResultStringOfUsers = theForum.getList().stream()
                 .filter(forumUser -> forumUser.getUserSex() == 'M')
-                .filter(forumUser -> Period.between(forumUser.getUserBithDate(), LocalDate.of(2020,01,27)).getYears() >= 20)
+                .filter(forumUser -> Period.between(forumUser.getUserBithDate(), LocalDate.now()).getYears() >= 20)
                 .filter(forumUser -> forumUser.getUserPublishedPost() > 0)
                 .collect(Collectors.toMap(ForumUser::getUserId, forumUser -> forumUser));
 
