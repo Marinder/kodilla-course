@@ -10,10 +10,10 @@ public class ArrayOperationsTestSuite {
         int numbers [] = {2,2,2,2,2,5,5,5,5,5,1,1,1,1,1,10,10,10,10,10};
 
         //When
-        double average1 = 4.5;
-        double average2 = ArrayOperations.getAverage(numbers);
+        double result  = 4.5;
+        double expected  = ArrayOperations.getAverage(numbers);
         //Then
-        Assert.assertEquals(average1,average2,0.001);
+        Assert.assertEquals(result,expected ,0.001);
 
 
     }

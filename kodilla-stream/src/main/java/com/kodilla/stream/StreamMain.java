@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 
 public class StreamMain {
     public static void main(String[] args) {
+        /*
 
         Forum theForum = new Forum();
         Map<Integer, ForumUser> theResultStringOfUsers = theForum.getList().stream()
@@ -31,10 +32,6 @@ public class StreamMain {
                 .map(entry -> entry.getKey() + ": " + entry.getValue())
                 .forEach(System.out::println);
 
-
-
-
-        /*
         BookDirectory theBookDirectory = new BookDirectory();
         String theResultStringOfBooks = theBookDirectory.getList().stream()
                 .filter(book -> book.getYearOfPublication() > 2005)
