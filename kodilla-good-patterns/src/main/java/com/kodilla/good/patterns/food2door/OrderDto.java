@@ -1,4 +1,6 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.food2door;
+
+
 
 public class OrderDto {
     public User user;
