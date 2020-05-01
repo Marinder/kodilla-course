@@ -17,11 +17,11 @@ public class ProductOrderService  {
 
     public OrderDto process(final OrderRequest orderRequest) {
         boolean isOrdered = orderService.order(orderRequest.getUser(), orderRequest.getTimeOrder(),
-                orderRequest.getProduct(), orderRequest.getCompany());
+                orderRequest.getProduct());
 
         if(isOrdered) {
             informationService.inform(orderRequest.getUser(), orderRequest.getProduct());
-            orderRepository.createOrder(orderRequest.getUser(), orderRequest.getTimeOrder(), orderRequest.getProduct(), orderRequest.getCompany());
+            orderRepository.createOrder(orderRequest.getUser(), orderRequest.getTimeOrder(), orderRequest.getProduct());
             return new OrderDto(orderRequest.getUser(), true);
         } else {
             return new OrderDto(orderRequest.getUser(), false);

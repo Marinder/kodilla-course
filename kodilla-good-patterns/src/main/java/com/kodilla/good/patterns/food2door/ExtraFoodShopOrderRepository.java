@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class ExtraFoodShopOrderRepository implements  OrderRepository{
     @Override
-    public boolean createOrder(User user, LocalDateTime timeOrder, Product product, Company company) {
+    public boolean createOrder(User user, LocalDateTime timeOrder, Product product) {
         return true;
     }
 }

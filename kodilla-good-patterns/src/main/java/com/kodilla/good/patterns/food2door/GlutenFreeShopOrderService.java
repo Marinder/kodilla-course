@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 public class GlutenFreeShopOrderService implements OrderService {
     @Override
-    public boolean order(User user, LocalDateTime timeOrder, Product product, Company company) {
+    public boolean order(User user, LocalDateTime timeOrder, Product product) {
         return true;
     }
 }

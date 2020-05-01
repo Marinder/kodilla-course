@@ -7,14 +7,11 @@ public class OrderRequest {
     private User user;
     private LocalDateTime timeOrder;
     private Product product;
-    private Company company;
 
-
-    public OrderRequest(final User user, final LocalDateTime timeOrder, final Product product, final Company company) {
+    public OrderRequest(final User user, final LocalDateTime timeOrder, final Product product) {
         this.user = user;
         this.timeOrder = timeOrder;
         this.product = product;
-        this.company = company;
     }
 
     public User getUser() {
@@ -29,7 +26,4 @@ public class OrderRequest {
         return product;
     }
 
-    public Company getCompany() {
-        return company;
-    }
 }
