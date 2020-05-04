@@ -25,10 +25,12 @@ public class FlightService {
                 .filter(entry -> entry.getDepartureAirport().equals(departureAirport))
                 .filter(entry -> entry.getArrivalAirport().equals(via))
                 .collect(Collectors.toSet());
+
         Set<Flight> theFlightListArrival = theFlightList.stream()
                 .filter(entry -> entry.getArrivalAirport().equals(arrivalAirport))
                 .filter(entry -> entry.getDepartureAirport().equals(via))
                 .collect(Collectors.toSet());
+
         Set<Flight> theFlightListDepartureViaArrival = new HashSet<>();
         theFlightListDepartureViaArrival.addAll(theFlightListDeparture);
         theFlightListDepartureViaArrival.addAll(theFlightListArrival);
