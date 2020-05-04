@@ -34,6 +34,6 @@ public class FlightService {
         Set<Flight> theFlightListDepartureViaArrival = new HashSet<>();
         theFlightListDepartureViaArrival.addAll(theFlightListDeparture);
         theFlightListDepartureViaArrival.addAll(theFlightListArrival);
-        System.out.println(theFlightListDepartureViaArrival);
+        theFlightListDepartureViaArrival.forEach(System.out::println);
     }
 }
