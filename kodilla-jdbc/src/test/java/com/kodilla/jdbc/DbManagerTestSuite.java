@@ -1,14 +1,7 @@
 package com.kodilla.jdbc;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 public class DbManagerTestSuite {
-    @Test
+ /*   @Test
     public void testConnect() throws SQLException {
         //Given
         //When
@@ -63,5 +56,5 @@ public class DbManagerTestSuite {
         rs.close();
         statement.close();
         Assert.assertEquals(2, counter);
-    }
+    }*/
 }
